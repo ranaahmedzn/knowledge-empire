@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "authorName": "John Watson",
+    "blogTitle": "How to get your first job as a self-taught programmer",
+    "cover_url": "https://images.unsplash.com/photo-1596949469909-5217f8b68f23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "authorImage": "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "readTime": "05",
+    "publish_date": "25 march (3 days ago)",
+    "hashTag": ["beginners", "programming"]
+  },
+  {
+    "id": "2",
+    "authorName": "William Joseph",
+    "blogTitle": "How to get your first job as a self-taught programmer",
+    "cover_url": "https://img.freepik.com/premium-photo/various-computer-equipment-with-programming-code-screens-table-dark-room-cyber-security-concept-copy-space_236854-23136.jpg?size=626&ext=jpg&ga=GA1.1.142852521.1680218330&semt=ais",
+    "authorImage": "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "readTime": "06",
+    "publish_date": "21 February (Last month)",
+    "hashTag": ["beginners", "programming"]
+  },
+  {
+    "id": "3",
+    "authorName": "Eliana",
+    "blogTitle": "How to get your first job as a self-taught programmer",
+    "cover_url": "https://img.freepik.com/premium-vector/illustration-concept-developing-mobile-internet-applications_182292-214.jpg?w=826",
+    "authorImage": "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "readTime": "03",
+    "publish_date": "19 march (5 days ago)",
+    "hashTag": ["beginners", "programming"]
+  },
+  {
+    "id": "4",
+    "authorName": "David",
+    "blogTitle": "How to get your first job as a self-taught programmer",
+    "cover_url": "https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=906&q=80",
+    "authorImage": "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "readTime": "07",
+    "publish_date": "14 January (2 month ago)",
+    "hashTag": ["beginners", "programming"]
+  }
+]
