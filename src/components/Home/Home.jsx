@@ -5,6 +5,7 @@ import Sidemark from '../Sidemark/Sidemark';
 const Home = () => {
     const [blogs, setBlogs] = useState([])
     const [spentTime, setSpentTime] = useState(0)
+    const [bookmark, setBookmark] = useState([])
 
     useEffect(() => {
         fetch('data.json')
@@ -18,6 +19,16 @@ const Home = () => {
         setSpentTime(previousReadTime + newReadTime)
     }
 
+    const handleBookmark = (blog) => {
+        const exists = bookmark?.find(b => b?.id === blog.id);
+        if(!exists){
+            setBookmark([...bookmark, blog])
+        }
+        else{
+            alert('Kire bhai aita to akbar add hoise')
+        }
+    }
+
     return (
         <div className='container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6'>
             <div className='md:col-span-2'>
@@ -26,12 +37,16 @@ const Home = () => {
                     key={blog.id}
                     blog={blog}
                     handleSpentTime={handleSpentTime}
+                    handleBookmark={handleBookmark}
                     ></Blog>)
                 }
             </div>
 
             <div>
-                <Sidemark spentTime={spentTime}></Sidemark>
+                <Sidemark 
+                spentTime={spentTime}
+                bookmark={bookmark}
+                ></Sidemark>
             </div>
         </div>
     );

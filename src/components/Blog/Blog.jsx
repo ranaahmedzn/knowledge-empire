@@ -2,8 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 
-const Blog = ({blog, handleSpentTime}) => {
-    // console.log(handleSpentTime)
+const Blog = ({blog, handleSpentTime, handleBookmark}) => {
     const {cover_url, authorImage, authorName, publish_date, readTime, blogTitle, hashTag } = blog;
     return (
         <div>
@@ -18,7 +17,7 @@ const Blog = ({blog, handleSpentTime}) => {
                 </div>
                 <p>
                     {readTime} min red &nbsp;
-                    <FontAwesomeIcon icon={faBookmark} />
+                    <FontAwesomeIcon onClick={() => handleBookmark(blog)} className='cursor-pointer' icon={faBookmark} />
                 </p>
             </div>
             <h1 className='text-4xl w-3/4 font-bold my-5 leading-[50px]'>{blogTitle}</h1>
