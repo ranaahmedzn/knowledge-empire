@@ -29,11 +29,25 @@ const Home = () => {
         position: toast.POSITION.TOP_LEFT,
       });
     } else {
-      Swal.fire({
-        icon: "error",
-        title: "Oops..",
-        text: "You Have Already Bookmarked This Blog!",
-      });
+      //EXTRA PRACTICE:
+      function getInput() {
+        return Swal.fire({
+          icon: "error",
+          title: "Oops..",
+          text: "You have already bookmarked this blog! Do you want to Bookmark it again?",
+        });
+      }
+      function main() {
+        if (getInput) {
+          const check = getInput();
+          check.then((result) => {
+            if (result) {
+              setBookmark([...bookmark, blog]);
+            }
+          });
+        }
+      }
+      main()
     }
   };
 

@@ -16,7 +16,7 @@ const Blog = ({blog, handleSpentTime, handleBookmark}) => {
                     </div>
                 </div>
                 <p>
-                    {readTime} min red &nbsp;
+                    {readTime} min red &nbsp; &nbsp;
                     <FontAwesomeIcon onClick={() => handleBookmark(blog)} className='cursor-pointer' icon={faBookmark} />
                 </p>
             </div>

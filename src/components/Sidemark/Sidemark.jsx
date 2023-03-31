@@ -8,7 +8,7 @@ const Sidemark = ({spentTime, bookmark}) => {
             </div>
 
             <div className='bg-slate-200 rounded-lg min-h-[500px] p-6'>
-                <h3 className='font-bold text-2xl mb-5'>Bookmarked Blogs :</h3>
+                <h3 className='font-bold text-2xl mb-5'>Bookmarked Blogs : {bookmark.length}</h3>
                 {
                     bookmark.map(blog => <BookmarkedBlog blog={blog} />)
                 }
