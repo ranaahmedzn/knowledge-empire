@@ -6,7 +6,7 @@ const Blog = ({blog, handleSpentTime, handleBookmark}) => {
     const {cover_url, authorImage, authorName, publish_date, readTime, blogTitle, hashTag } = blog;
     return (
         <div>
-            <img className='w-full h-[450px] rounded-lg mb-6' src={cover_url} alt="" />
+            <img className='w-full h-[200px] md:h-[300px] lg:h-[450px] rounded-lg mb-6' src={cover_url} alt="" />
             <div className='flex justify-between items-center my-6'>
                 <div className='flex items-center gap-5'>
                     <img className='ring-2 ring-gray-700 w-[60px] h-[60px] rounded-full' src={authorImage} alt="" />
@@ -20,7 +20,7 @@ const Blog = ({blog, handleSpentTime, handleBookmark}) => {
                     <FontAwesomeIcon onClick={() => handleBookmark(blog)} className='cursor-pointer' icon={faBookmark} />
                 </p>
             </div>
-            <h1 className='text-4xl w-3/4 font-bold my-5 leading-[50px]'>{blogTitle}</h1>
+            <h1 className='text-3xl md:text-4xl w-full md:w-3/4 font-bold my-5 leading-[50px]'>{blogTitle}</h1>
             <p className='my-4'>
                 {
                     hashTag.map(tag => <span className='mr-3'>#{tag}</span>)

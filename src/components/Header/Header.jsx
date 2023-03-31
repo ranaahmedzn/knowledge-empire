@@ -8,14 +8,14 @@ const Header = () => {
     <nav className="container mx-auto mt-5 mb-8">
       <div className="navbar">
         <div className="flex-1">
-          <img className="h-[100px]" src={logo} alt="" />
+          <img className="h-[70px] md:h-[100px]" src={logo} alt="" />
         </div>
         <div className="flex-none gap-10">
-            <div>
-                <a href="#" className="text-lg font-bold ml-10">Home</a>
-                <a href="#" className="text-lg font-bold ml-10">Blog</a>
-                <a href="#" className="text-lg font-bold ml-10">About</a>
-                <a href="#" className="text-lg font-bold ml-10">
+            <div className="hidden md:block">
+                <a href="#" className="text-lg font-bold ml-8 hover:border-b-4 p-1 border-indigo-500 transition-all duration-75">Home</a>
+                <a href="#" className="text-lg font-bold ml-8 hover:border-b-4 p-1 border-indigo-500 transition-all duration-75">Blog</a>
+                <a href="#" className="text-lg font-bold ml-8 hover:border-b-4 p-1 border-indigo-500 transition-all duration-75">About</a>
+                <a href="#" className="text-lg font-bold ml-8 hover:border-b-4 p-1 border-indigo-500 transition-all duration-75">
                     <FontAwesomeIcon icon={faRightToBracket} />&nbsp;
                     Login
                 </a>

@@ -38,7 +38,7 @@ const Home = () => {
   };
 
   return (
-    <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="container px-3 md:px-0 mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
       <div className="md:col-span-2">
         {blogs.map((blog) => (
           <Blog
