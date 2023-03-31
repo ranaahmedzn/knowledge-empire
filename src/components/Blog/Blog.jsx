@@ -2,8 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 
-const Blog = ({blog}) => {
-    console.log(blog)
+const Blog = ({blog, handleSpentTime}) => {
+    // console.log(handleSpentTime)
     const {cover_url, authorImage, authorName, publish_date, readTime, blogTitle, hashTag } = blog;
     return (
         <div>
@@ -27,7 +27,7 @@ const Blog = ({blog}) => {
                     hashTag.map(tag => <span className='mr-3'>#{tag}</span>)
                 }
             </p>
-            <p className='inline-block font-bold text-lg hover:text-indigo-700 cursor-pointer text-indigo-500 underline'>Mark as read</p>
+            <p onClick={() => handleSpentTime(readTime)} className='inline-block font-bold text-lg hover:text-indigo-700 cursor-pointer text-indigo-500 underline'>Mark as read</p>
             <hr className='my-8' />
         </div>
     );
