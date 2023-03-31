@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
+import Sidemark from '../Sidemark/Sidemark';
 
 const Home = () => {
     const [blogs, setBlogs] = useState([])
@@ -20,8 +21,8 @@ const Home = () => {
                 }
             </div>
 
-            <div className='bg-green-500'>
-                This is side component
+            <div>
+                <Sidemark></Sidemark>
             </div>
         </div>
     );
