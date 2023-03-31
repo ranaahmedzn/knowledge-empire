@@ -5,17 +5,17 @@ import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
-    <nav className="container mx-auto my-8">
+    <nav className="container mx-auto mt-5 mb-8">
       <div className="navbar">
         <div className="flex-1">
           <img className="h-[100px]" src={logo} alt="" />
         </div>
         <div className="flex-none gap-10">
             <div>
-                <a href="#" className="text-xl font-bold ml-10">Home</a>
-                <a href="#" className="text-xl font-bold ml-10">Blog</a>
-                <a href="#" className="text-xl font-bold ml-10">About</a>
-                <a href="#" className="text-xl font-bold ml-10">
+                <a href="#" className="text-lg font-bold ml-10">Home</a>
+                <a href="#" className="text-lg font-bold ml-10">Blog</a>
+                <a href="#" className="text-lg font-bold ml-10">About</a>
+                <a href="#" className="text-lg font-bold ml-10">
                     <FontAwesomeIcon icon={faRightToBracket} />&nbsp;
                     Login
                 </a>
